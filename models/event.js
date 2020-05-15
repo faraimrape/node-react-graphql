@@ -18,6 +18,10 @@ const eventSchema = new Schema({
     type: Date,
     required: true,
   },
+  creator: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
 });
 
 //create a model off a mongo schema and export is app wide
